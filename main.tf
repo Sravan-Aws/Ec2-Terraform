@@ -13,6 +13,7 @@ resource "aws_instance" "Amazon_Linux2" {
   security_groups = ["sg-07680b226bccc2158"]
   tags = {
     Name = "webserver1"
+    Name = "webserver2"
   }
 }
 

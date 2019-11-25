@@ -12,7 +12,7 @@ resource "aws_instance" "Amazon_Linux2" {
   subnet_id = data.aws_subnet.selected.id
   security_groups = ["sg-07680b226bccc2158"]
   tags = {
-    Name = "webserver"
+    Name = "webserver1"
   }
 }
 

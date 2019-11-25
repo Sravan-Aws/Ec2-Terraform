@@ -1,0 +1,17 @@
+node {
+    stage('clone'){
+        git url: 'https://github.com/Sravan-Aws/Ec2-Terraform.git'
+    }
+    stage('build'){
+        sh ('terraform init')
+    }
+    
+    stage('plan'){
+      sh('terraform plan')
+    }
+    stage('Apply'){
+        sh ('terraform apply -auto-approve ')
+    }
+    
+    
+}
